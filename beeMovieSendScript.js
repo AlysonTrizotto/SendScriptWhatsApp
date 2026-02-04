@@ -39,7 +39,7 @@ async function enviarScript(scriptText){
         
         // Delay entre mensagens para evitar bloqueio por spam (250ms é o padrão do script original)
         if(lines.indexOf(line) !== lines.length - 1) {
-            await new Promise(resolve => setTimeout(resolve, 250));
+            await new Promise(resolve => setTimeout(resolve, 5));
         }
     }
     
